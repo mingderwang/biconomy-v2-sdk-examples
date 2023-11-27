@@ -114,7 +114,7 @@ export const multiChainMint = async () => {
   }});
 
   const scwAddress2 = await biconomySmartAccount2.getAccountAddress();
-
+  console.log(`scwAddress2 = ${scwAddress2}`)
   // Here we are minting NFT to smart account address itself
   const data2 = nftInterface.encodeFunctionData("safeMint", [scwAddress2]);
 
